@@ -12,7 +12,7 @@ class XiaoshuoPipeline(object):
         client = pymongo.MongoClient(host='localhost', port=27017)
         self.db = client['spider']
         self.coll = self.db['novel']
-        #self.db.authenticate('jamesjiajia', 'python')
+        #self.db.authenticate('username', 'password')
 
     def process_item(self, item, spider):
         #filename = item['file_novel']
